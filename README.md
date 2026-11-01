@@ -245,6 +245,29 @@ the engine — no numpy, no torch. The trainer needs PyTorch and a GPU.
 
 ---
 
+## The network
+
+`nets/maskfish-jieqi-r9.nnue` — the final network of the loop.
+
+```
+size    10,882,319 bytes
+md5     37d0d78242a507d9bdc5c73f282f7ee6
+sha256  24901914342726f56b0915892fc8da0b2406c48076fbf8f1c183286581071cd1
+arch    (7560, 2048, 15, 32, 1)     # HalfKAv2_hm_jieqi, default bucket shape
+```
+
+Verified to load and search with Maskfish at the documented upstream snapshot:
+
+```
+info string NNUE evaluation using maskfish-jieqi-r9.nnue (15MiB, (7560, 2048, 15, 32, 1))
+info depth 1 ... score cp 11 nodes 1283 nps 183285 pv i3i4
+```
+
+Use it with `setoption name EvalFile value <path>`; no rebuild is needed, the
+default build already accepts this architecture. The `att` networks from the
+architecture experiment are not included — they are 46.8 MB each and lost the
+argument they were built to win.
+
 ## Repository layout
 
 ```
