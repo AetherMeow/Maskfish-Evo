@@ -218,11 +218,15 @@ results/         raw summary.json from every match reported above
 docs/            methodology, and the engineering notes behind the numbers
 ```
 
-## Licence
+## Licence and upstream
 
-GPL-3.0. Maskfish is a Stockfish derivative and AB-JChess is GPL-3.0; both the
-modified engine sources and the derived networks are distributed under the same
-terms. See `LICENSE`.
+GPL-3.0 — see `LICENSE`.
+
+This is **not a fork of Maskfish**. It contains only what we produced: the
+pipeline, the network, and the measurements. The engine is upstream, unmodified
+except for one three-line edit needed to make the AVX2 build compile. Both that
+edit and the exact upstream snapshot are documented in
+[`docs/upstream.md`](docs/upstream.md).
 
 ## Credits
 
