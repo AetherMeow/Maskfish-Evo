@@ -1,0 +1,45 @@
+{
+  "a": "cloudr9",
+  "b": "abjchess",
+  "games": 800,
+  "w": 370,
+  "d": 23,
+  "l": 407,
+  "score": 0.476875,
+  "elo": -16.08036801535181,
+  "elo_lo": -39.94527332638498,
+  "elo_hi": 7.633629900414664,
+  "pent": {
+    "pairs": 400,
+    "score": 0.476875,
+    "elo": -16.08036801535181,
+    "elo_lo": -38.87295298594937,
+    "elo_hi": 6.574545912598998
+  },
+  "reasons": {
+    "BLACK_LOSES": 418,
+    "RED_LOSES": 359,
+    "DRAW": 23
+  },
+  "args": {
+    "engine": [
+      "cloudr9=cloudr9",
+      "abjchess=abjchess"
+    ],
+    "games": 800,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/finalgate/r9-vs-abj",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

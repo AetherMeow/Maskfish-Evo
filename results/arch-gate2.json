@@ -1,0 +1,45 @@
+{
+  "a": "a6att",
+  "b": "a6def",
+  "games": 1000,
+  "w": 509,
+  "d": 20,
+  "l": 471,
+  "score": 0.519,
+  "elo": 13.208912589850435,
+  "elo_lo": -8.101054406639472,
+  "elo_hi": 34.6188067774507,
+  "pent": {
+    "pairs": 500,
+    "score": 0.519,
+    "elo": 13.208912589850435,
+    "elo_lo": -7.755828719690723,
+    "elo_hi": 34.27035834713928
+  },
+  "reasons": {
+    "BLACK_LOSES": 498,
+    "RED_LOSES": 482,
+    "DRAW": 20
+  },
+  "args": {
+    "engine": [
+      "a6att=a6att",
+      "a6def=a6def"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/arch/gate2",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

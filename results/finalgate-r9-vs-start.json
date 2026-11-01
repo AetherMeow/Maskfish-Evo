@@ -1,0 +1,55 @@
+{
+  "a": "cloudr9",
+  "b": "rl2net",
+  "games": 1080,
+  "w": 631,
+  "d": 17,
+  "l": 432,
+  "score": 0.5921296296296297,
+  "elo": 64.7578544266424,
+  "elo_lo": 44.05282524087013,
+  "elo_hi": 85.92838198042811,
+  "pent": {
+    "pairs": 540,
+    "score": 0.5921296296296297,
+    "elo": 64.7578544266424,
+    "elo_lo": 44.1597829880853,
+    "elo_hi": 85.81656788764717
+  },
+  "reasons": {
+    "BLACK_LOSES": 585,
+    "RED_LOSES": 478,
+    "DRAW": 17
+  },
+  "sprt": {
+    "elo0": 0.0,
+    "elo1": 5.0,
+    "llr": 2.934095558609719,
+    "pairs": 540,
+    "result": "inconclusive"
+  },
+  "args": {
+    "engine": [
+      "cloudr9=cloudr9",
+      "rl2net=rl2net"
+    ],
+    "games": 2000,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/finalgate/r9-vs-start",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": [
+      0.0,
+      5.0
+    ]
+  }
+}
