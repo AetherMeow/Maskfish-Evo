@@ -1,0 +1,45 @@
+{
+  "a": "a6def",
+  "b": "cloudr9",
+  "games": 1000,
+  "w": 460,
+  "d": 19,
+  "l": 521,
+  "score": 0.4695,
+  "elo": -21.219916654091893,
+  "elo_lo": -42.695434068012815,
+  "elo_hi": 0.09466415035794574,
+  "pent": {
+    "pairs": 500,
+    "score": 0.4695,
+    "elo": -21.219916654091893,
+    "elo_lo": -42.00203059160399,
+    "elo_hi": -0.5885389377065855
+  },
+  "reasons": {
+    "RED_LOSES": 470,
+    "BLACK_LOSES": 511,
+    "DRAW": 19
+  },
+  "args": {
+    "engine": [
+      "a6def=a6def",
+      "cloudr9=cloudr9"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/night/a6def-vs-r9",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

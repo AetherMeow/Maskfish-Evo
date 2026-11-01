@@ -83,11 +83,18 @@ Nine rounds produced 86 580 962 positions. Every one of them was kept:
 | r8 | 9 820 841 | |
 | r9 | 9 780 476 | |
 
-At the end a network trained on the *static union* of all nine rounds (6 passes,
-520 M samples) was compared to the network produced by the *sequential* loop.
-Both consumed the same number of samples; the difference is that the loop's data
-distribution moves with the network. This is the only experiment in the project
-that isolates "iterate" from "just train more".
+At the end a network was trained from scratch on the *static union* of all nine
+rounds — 6 passes, 520 M samples, same seed, same schedule — and played against
+the sequential loop's final network. Both consumed exactly the same number of
+samples from exactly the same positions; the only difference is whether the data
+distribution moved with the network.
+
+**Result: the union network lost, −21 Elo [−42, −1] over 1000 games.** So the
+loop is not a convenient way to accumulate a corpus — the corpus it accumulates
+would be worth less. Iterating over a moving distribution beats one pass over the
+frozen union of what that iteration produced. This is the only experiment here
+that separates "iterate" from "train more", and it is the one that justifies the
+whole pipeline.
 
 ---
 

@@ -1,0 +1,45 @@
+{
+  "a": "cloudr9",
+  "b": "abjchess",
+  "games": 400,
+  "w": 206,
+  "d": 11,
+  "l": 183,
+  "score": 0.52875,
+  "elo": 19.999606867699825,
+  "elo_lo": -13.549447299652664,
+  "elo_hi": 53.92659306419836,
+  "pent": {
+    "pairs": 200,
+    "score": 0.52875,
+    "elo": 19.999606867699825,
+    "elo_lo": -12.524088059560428,
+    "elo_hi": 52.87829491604579
+  },
+  "reasons": {
+    "RED_LOSES": 190,
+    "BLACK_LOSES": 199,
+    "DRAW": 11
+  },
+  "args": {
+    "engine": [
+      "cloudr9=cloudr9",
+      "abjchess=abjchess"
+    ],
+    "games": 400,
+    "movetime": 2000,
+    "tc": "",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/night/r9-vs-abj-2000ms",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}
