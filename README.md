@@ -177,12 +177,25 @@ need not be interleaved with generation: one run at the end over the accumulated
 corpus does the same job, which is simpler and leaves the GPU idle instead of
 cycling it.
 
-The experiment we have not run, and the one that would separate "better labels"
-from "more labels": generate the same 86.6 M positions using **only** the
-starting network `rl2net` — same corpus size, but every label from a
-65-Elo-weaker searcher — and train once. If that network is clearly worse,
-progressive relabelling is doing the work. If it is the same, the loop is an
-expensive way to collect a corpus.
+One caveat on the mechanism, measured afterwards: on 2000 real training positions,
+a network 65 Elo stronger produces labels that differ from the weaker network's by
+only 1.3 % of win probability on average, and the two agree within 5 % on 98.6 % of
+positions. So "better labels" is a small per-position effect that accumulates over
+86 M positions — which is also why mixing in eight rounds of stale data cost
+nothing (E2'). Relabelling at 50 000 nodes instead of 5 000 moved both networks
+closer to an external judge (Spearman +0.014 / +0.011 against AB-JChess's deep
+search), i.e. **label depth matters more than which network produces the label** —
+but that comparison could not be made unbiased: with AB-JChess as judge, the
+AB-distilled `rl2net` looked closer (60 % paired), and with `r9`'s own deep search
+as judge, `r9` looked closer (73 % paired). Each oracle is correlated with one of
+the two candidates, so neither ranks them honestly. Only games settle it.
+
+The experiment that would settle "better labels versus more labels" — generating
+the same 86.6 M positions with the starting network only, then training once — was
+deliberately not run. It is worth being explicit about why: the answer is
+predictable a priori (labels from a 65-Elo-weaker searcher cannot be *better*, or
+the network would be pointless), and the money is better spent on more RL rounds,
+which buy a measured +6.6 Elo each. The question is deferred, not answered.
 
 ### Architecture: does a 4× wider net pay off with data?
 
