@@ -1,0 +1,45 @@
+{
+  "a": "unionwarm",
+  "b": "cloudr9",
+  "games": 1000,
+  "w": 484,
+  "d": 20,
+  "l": 496,
+  "score": 0.494,
+  "elo": -4.169427166460877,
+  "elo_lo": -25.53136905871769,
+  "elo_hi": 17.16099926964854,
+  "pent": {
+    "pairs": 500,
+    "score": 0.494,
+    "elo": -4.169427166460877,
+    "elo_lo": -23.79797915388623,
+    "elo_hi": 15.432518442613782
+  },
+  "reasons": {
+    "BLACK_LOSES": 526,
+    "RED_LOSES": 454,
+    "DRAW": 20
+  },
+  "args": {
+    "engine": [
+      "unionwarm=unionwarm",
+      "cloudr9=cloudr9"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/arch/gate-unionwarm",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

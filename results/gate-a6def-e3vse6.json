@@ -1,0 +1,45 @@
+{
+  "a": "a6def_e3",
+  "b": "a6def_e6",
+  "games": 600,
+  "w": 305,
+  "d": 15,
+  "l": 280,
+  "score": 0.5208333333333334,
+  "elo": 14.484869061777905,
+  "elo_lo": -12.9559978892308,
+  "elo_hi": 42.10792531121443,
+  "pent": {
+    "pairs": 300,
+    "score": 0.5208333333333334,
+    "elo": 14.484869061777905,
+    "elo_lo": -10.72491083933231,
+    "elo_hi": 39.84828316269431
+  },
+  "reasons": {
+    "BLACK_LOSES": 321,
+    "RED_LOSES": 264,
+    "DRAW": 15
+  },
+  "args": {
+    "engine": [
+      "a6def_e3=a6def_e3",
+      "a6def_e6=a6def_e6"
+    ],
+    "games": 600,
+    "movetime": 0,
+    "tc": "",
+    "depth": 0,
+    "nodes": 20000,
+    "hash": 64,
+    "threads": 1,
+    "concurrency": 8,
+    "seed": 20261026,
+    "out": "/home/aether/jieqi-lab/runs/cloudrl/arch/gate-a6def-e3vse6",
+    "scores": false,
+    "resume": false,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}
